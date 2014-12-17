@@ -1,0 +1,108 @@
+/*
+	Code written by Alex Bowers for Zando.co.uk, and any of its affiliated websites
+	This code is protected by copyright and is the direct property of Alex Bowers
+	Any reproduction, change or distribution of code, design, content unless provided as an article within
+	zando or any of its affiliated websites. The articles themselves are covered under copyright, however their content may be used for your own projects, for commercial and personal use as long as said content isn't used 
+	to compete with zando in any educational manner.
+
+	Copyright 2014
+
+	Feel free to read this code and learn from it, however direct copying is forbidden.
+
+	Thank you.
+
+    Copyright (C) Zando.co.uk - All Rights Reserved
+    Unauthorized copying of this file, via any medium is strictly prohibited
+    Proprietary and confidential
+    Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Zando.co.uk exclusively
+*/
+@import "inc/_reset.less";
+
+//	Variables
+
+// Colours
+
+@green: #44b37e;
+@white: #ffffff;
+@black: #000000;
+@active: #252525;
+@inactive: #b0b0b0;
+@header-bg: #f6f6f6;
+@white-hover: #e7e7e7;
+
+// End Colours
+
+// Dimensions
+@column-width: 400px;
+@max-width: 1400px;
+@spacing: 50px;
+// End Dimensions
+
+// Fonts
+@import "../fonts/_roboto.less";
+// End Fonts
+
+// Useful Code
+.vertical-position {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.horizontal-center {
+	margin: 0 auto;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+// End Useful Code
+
+//	End Variables
+html, body {
+	height: 100%;
+	min-width: 320px;
+}
+
+body {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.menu {
+	display: none;
+}
+
+@media (min-width: 320px) {
+	@import "queries/_width-320.less";
+}
+
+@media (min-width: 480px) {
+	@import "queries/_width-480.less";
+}
+
+@media (min-width: 670px) {
+	@import "queries/_width-670.less";
+}
+
+@media (min-width: 960px) {
+	@import "queries/_width-960.less";
+}
+
+@media (min-width: 1024px) {
+	@import "queries/_width-1024.less";
+}
+
+@media (min-width: 1280px) {
+	@import "queries/_width-1280.less";
+}
