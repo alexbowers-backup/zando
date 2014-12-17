@@ -1,0 +1,149 @@
+/*
+	
+	Code written by Alex Bowers for Build An Education
+	This code is protected by copyright and is the direct property of Build An Education
+	Any reproduction, change or distribution of this code is forbidden
+	unless granted permission directly by Alex Bowers, or another representative party for Build An Education
+
+	Copyright 2014
+
+	Warning to Developers.
+
+	Do not edit CSS file directly. Edit Less file and compile.
+
+*/
+
+// VARIABLES
+
+// COLOURS
+@green: #8fc239;
+@orange: #f77b23;
+@black: #000;
+@white: #fff;
+@blue: #03b2e7;
+
+// Quantities
+
+@numOfCarouselPanels: 5;
+@boundary-width: 900px;
+
+// Fonts
+
+@roboto-font: "Roboto";
+@roboto-font-condensed-bold: "Roboto Condensed", "RobotoCondensedBold";
+
+// Useful Code:
+
+.vertical-position(@distance: 50%) {
+	top: @distance;
+	transform: translateY(-1 * @distance);
+	position: relative;
+	display: block;
+}
+.horizontal-center {
+	margin: 0 auto;
+}
+
+// END VARIABLES
+
+html, body {
+	height: 100%;
+}
+.menu {
+	display: none;
+}
+@media(min-width: 320px) {
+	@import "queries/width-320.less";
+}
+@media(min-width: 480px) {
+	@import "queries/width-480.less";
+}
+@media(min-width: 670px) {
+	@import "queries/width-640.less";
+}
+@media(min-width: 960px) {
+	@import "queries/width-960.less";
+}
+@media(min-width: 1024px) {
+	@import "queries/width-1024.less";
+}
+
+
+// ANIMATIONS
+
+@keyframes carousel {
+	0%    { 
+		left:0; 
+	}
+    11%   { 
+    	left:0; 
+    }
+    12.5% { 
+    	left:-100%; 
+    }
+    23.5% { 
+    	left:-100%; 
+    }
+    25%   { 
+    	left:-200%; 
+    }
+    36%   { 
+    	left:-200%; 
+    }
+    37.5% { 
+    	left:-300%;
+    }
+    48.5% { 
+		left:-300%; 
+	}
+    50%   { 
+    	left:-400%; 
+    }
+    61%   { 
+    	left:-400%; 
+    }
+    62.5% { 
+    	left:-300%; 
+    }
+    73.5% { 
+    	left:-300%; 
+    }
+    75%   { 
+    	left:-200%; 
+    }
+    86%   { 
+    	left:-200%; 
+    }
+    87.5% { 
+    	left:-100%; 
+    }
+    98.5% { 
+    	left:-100%; 
+    }
+    100%  { 
+    	left:0; 
+    }
+}
+
+@keyframes carousel-overlay {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	85% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+// END ANIMATIONS
