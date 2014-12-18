@@ -1,0 +1,11 @@
+{
+  "name": "SampleGrunt",
+  "version": "0.1.0",
+  "author": "Brandon Random",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
