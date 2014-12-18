@@ -83,23 +83,67 @@ body {
 	display: none;
 }
 
-@media (min-width: 320px) {
+#screen_not_supported {
+	z-index: 9999999;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: @white;
+	overflow: hidden;
+	div {
+		.vertical-position;
+		h2 {
+			font-family: "Roboto Condensed";
+			font-weight: 700;
+			font-size: 40px;
+			text-align: center;
+			text-transform: uppercase;
+			width: 100vw;
+		}
+		h4 {
+			font-family: "Roboto Thin";
+			font-weight: 400;
+			font-size: 14px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2.2px;
+			width: 100vw;
+		}
+	}
+}
+
+#scroll_down_for_more {
+	z-index: 9999999;
+	width: 100vw;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	i {
+		color: @white;
+		animation-duration: 1s;
+		animation-delay: 2s;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
 	@import "queries/_width-320.less";
 }
 
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width: 669px) {
 	@import "queries/_width-480.less";
 }
 
-@media (min-width: 670px) {
+@media (min-width: 670px) and (max-width: 959px) {
 	@import "queries/_width-670.less";
 }
 
-@media (min-width: 960px) {
+@media (min-width: 960px) and (max-width: 1023px) {
 	@import "queries/_width-960.less";
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
 	@import "queries/_width-1024.less";
 }
 
