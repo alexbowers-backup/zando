@@ -10,6 +10,7 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 <html>
 	<head>
 		<link rel="stylesheet" href="/css/file.css"/>
+		<link rel="stylesheet" href="/css/animate.min.css" />
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<meta charset="utf-8"/>
@@ -159,10 +160,22 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 			<footer>
 				<div class="boundary">
 					<div class="copyright">
-						&copy; {{date('Y')}} Zando | All Rights Reserved
+						&copy; {{ date('Y') }} Zando | All Rights Reserved
 					</div>
 				</div>
 			</footer>
+			<!-- Extras -->
+			<div id="scroll_down_for_more">
+				<i class="fa fa-chevron-down fa-2x animated bounce"></i>
+				<!-- Chevron Only -->
+			</div>
+			<section id="screen_not_supported">
+				<div>
+					<h2>We're sorry.</h2>
+					<h4>Your screen too small</h4>
+				</div>
+			</section>
+			<!-- END Extras -->
 		</div>
 	<script src="/js/script.js"></script>
 	</body>
