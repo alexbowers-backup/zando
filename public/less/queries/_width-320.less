@@ -447,7 +447,7 @@
 								.vertical-position;
 								display: inline-block;
 								height: 40px;
-								width: 32vw;
+								width: 33.3333333vw;
 								text-align: center;
 								line-height: 40px;
 								font-family: "Roboto Condensed";
@@ -457,6 +457,7 @@
 								color: @white;
 								cursor: pointer;
 								border: none;
+								float: left;
 								transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
 
 								&:hover, &.active {
@@ -472,8 +473,10 @@
 						line-height: 40px;
 						display: block;
 						float: left;
+						width: 100vw;
 						form {
 							height: 40px;
+							float: right;
 							i {
 								font-size: 1.0em !important;
 								line-height: 40px;
@@ -580,15 +583,16 @@
 							position: relative;
 							left: -20px;
 							width: 100vw;
-							height: 200px;
+							height: auto;
 							margin-bottom: 20px;
 							figure {
 								width: 100%;
-								height: 100%;
+								height: auto;
 								overflow: hidden;
+								position: relative;
 								img {
 									width: 100%;
-									height: 100%;
+									height: auto;
 								}
 								figcaption {
 									display: inline-block;
@@ -602,8 +606,8 @@
 									font-weight: 400;
 									text-indent: 5px;
 									&.difficulty {
-										position: relative;
-										top: -200px;
+										position: absolute;
+										top: 5px;
 										text-indent: 10px;
 										color: darken(@green, 10%);
 										font-weight: 700;
@@ -611,8 +615,9 @@
 										text-transform: uppercase;
 									}
 									&.duration {
-										position: relative;
-										top: -63px;
+										position: absolute;
+										top: 180px;
+										right: 0px;
 										width: 50px;
 										text-indent: -10px;
 										padding-right: 10px;
@@ -624,8 +629,8 @@
 										width: 250px;
 										float: left;
 										font-size: 16px;
-										position: relative;
-										top: -63px;
+										position: absolute;
+										top: 180px;
 										font-weight: 700;
 										text-align: left;
 									}

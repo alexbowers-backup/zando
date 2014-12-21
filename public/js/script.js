@@ -42,9 +42,9 @@ $(document).ready(function () {
             var scroll_down_current = document.getElementById('scroll_down_for_more').getBoundingClientRect().bottom;
             var diff = (scroll_down_current - scroll_down_start) * -1; // Make positive.
             if (diff > 0) {
-                 if(diff > 100) {
-                     diff = 100;
-                 }
+                if (diff > 100) {
+                    diff = 100;
+                }
                 $('#scroll_down_for_more').css('opacity', (100 - diff) / 100);
             }
         }, 50);
@@ -98,4 +98,11 @@ $(document).ready(function () {
             }
         }
     }, 25);
+
+    $('.browse_results_grid .cell').each(function () {
+        var aspect_ratio = 9 / 16;
+        var cell_width = $(this).width();
+        $(this).find('.duration').css('top', Math.floor(cell_width * aspect_ratio) - 35 + 'px');
+        $(this).find('.title').css('top', Math.floor(cell_width * aspect_ratio) - 35 + 'px');
+    });
 });

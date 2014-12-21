@@ -70,78 +70,79 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 					<hr/>
 					<div class="browse_results_grid">
 						<!-- Currently needs to be limited to 9 -->
-						<div class="cell">
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
-						<div class="cell">
+						</a>
+						<a href="#" class="cell">
 							<figure>
-								<img src="http://placehold.it/300x200"/>
+								<img src="http://placehold.it/1920x1080"/>
 								<figcaption class="difficulty">Beginner</figcaption>
 								<figcaption class="title">Lorem ipsum some text goes here</figcaption>
 								<figcaption class="duration">51:22</figcaption>
 							</figure>
-						</div>
+						</a>
 						<!-- Limit to 9 -->
 					</div>
 					<div class="separator">
@@ -169,6 +170,14 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 			</div>
 		</div>
 	</footer>
+	<!-- Extras -->
+	<section id="screen_not_supported">
+		<div>
+			<h2>We're sorry.</h2>
+			<h4>Your screen too small</h4>
+		</div>
+	</section>
+	<!-- END Extras -->
 </div>
 <script src="/js/script.js"></script>
 </body>

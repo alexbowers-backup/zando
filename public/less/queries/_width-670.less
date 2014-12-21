@@ -322,6 +322,10 @@
 						border-right: 2px solid @white;
 						color: @green;
 					}
+					&:last-child {
+						position: relative;
+						left: 2px;
+					}
 				}
 			}
 		}
@@ -365,11 +369,13 @@
 					.previews {
 						padding-top: 5px;
 						min-height: 400px;
-						padding-bottom: 0px;
+						padding-bottom: 0;
+						width: 100%;
+						float: left;
+						display: block;
 						.preview {
 							width: @near-full-bleed;
 							margin-bottom: 15px !important;
-							min-height: 575px;
 							.horizontal-center;
 							h1 {
 								font-family: "Roboto Condensed";
@@ -394,17 +400,23 @@
 								}
 							}
 							.video_section {
-								height: 450px;
+								height: auto;
 								width: 100%;
-								left: 0px;
+								display: block;
+								float: left;
 								figure {
 									width: 100%;
-									height: 450px;
+									height: auto;
 									img {
 										width: 100%;
-										height: 450px;
+										height: auto;
 									}
 								}
+							}
+							.video_description {
+								display: block;
+								float: left;
+								width: 100%;
 							}
 							p {
 								max-height: 60px;
@@ -420,14 +432,13 @@
 								padding-bottom: 5px;
 								text-align: justify;
 							}
-							a.continue {
+							a {
 								width: @full-bleed;
 								text-align: right;
 								float: right;
 								font-family: "Roboto Condensed";
 								font-weight: 700;
 								font-size: 18px;
-								text-transform: uppercase;
 								color: @black;
 								text-decoration: none;
 								&:hover {
@@ -454,11 +465,16 @@
 					}
 					.more_button {
 						.horizontal-center;
+						margin-top: 10px;
+						margin-bottom: 10px;
 						text-align: center;
 						width: @near-full-bleed;
 						display: block;
+						float: left;
 						border: 2px solid @black;
 						height: 40px;
+						position: relative;
+						left: 20px;
 						cursor: pointer;
 						transition: background-color 0.4s ease-in, color 0.4s ease-in;
 						h1 {
@@ -471,6 +487,256 @@
 							background-color: @green;
 							border: 2px solid @green;
 							color: @white;
+						}
+					}
+				}
+				.browse_header {
+					background-color: @green;
+					width: 100vw;
+					height: 40px;
+					position: relative;
+					left: -20px;
+					.left_side {
+						width: 50vw;
+						.tabs {
+							width: @full-bleed;
+							height: 40px;
+							line-height: 40px;
+							a {
+								.vertical-position;
+								display: inline-block;
+								height: 40px;
+								width: 33.333333%;
+								text-align: center;
+								line-height: 40px;
+								font-family: "Roboto Condensed";
+								font-weight: 700;
+								text-transform: uppercase;
+								text-decoration: none;
+								color: @white;
+								cursor: pointer;
+								border: none;
+								float: left;
+								transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
+
+								&:hover, &.active {
+									text-decoration: none;
+									background-color: @white;
+									color: @green;
+								}
+							}
+						}
+					}
+					.right_side {
+						height: 40px;
+						line-height: 40px;
+						display: block;
+						float: left;
+						width: 50vw;
+						form {
+							height: 40px;
+							float: right;
+							i {
+								font-size: 1.0em !important;
+								line-height: 40px;
+								color: @white;
+								text-align: left;
+								width: 30px;
+							}
+							input {
+								height: 40px;
+								background: transparent;
+								border: none;
+								color: @white;
+								padding: 0;
+								font-size: 14px;
+								line-height: 40px;
+								padding-left: 5px;
+								width: 280px;
+								text-transform: uppercase;
+								font-family: "Roboto Condensed";
+								font-weight: 700;
+								letter-spacing: 0.2px;
+								&::-webkit-input-placeholder {
+									color: @white;
+									font-family: "Roboto Condensed";
+									font-weight: 700;
+									text-transform: uppercase;
+									letter-spacing: 0.2px;
+								}
+
+								&:-moz-placeholder {
+									color: @white;
+									font-family: "Roboto Condensed";
+									font-weight: 700;
+									text-transform: uppercase;
+									letter-spacing: 0.2px;
+								}
+
+								&::-moz-placeholder {
+									color: @white;
+									font-family: "Roboto Condensed";
+									font-weight: 700;
+									text-transform: uppercase;
+									letter-spacing: 0.2px;
+								}
+
+								&:-ms-input-placeholder {
+									color: @white;
+									font-family: "Roboto Condensed";
+									font-weight: 700;
+									text-transform: uppercase;
+									letter-spacing: 0.2px;
+								}
+
+								&::-webkit-search-decoration,
+								&::-webkit-search-cancel-button,
+								&::-webkit-search-results-button,
+								&::-webkit-search-results-decoration {
+									-webkit-appearance: none;
+								}
+
+								&:-webkit-autofill {
+									background-color: transparent !important;
+								}
+							}
+							a {
+								cursor: pointer;
+							}
+						}
+					}
+				}
+				.browse_results {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					.browse_results_head {
+						width: @full-bleed;
+						text-align: center;
+						font-size: 18px;
+						font-family: "Roboto Condensed";
+						padding-bottom: 10px;
+						color: #333;
+					}
+					hr {
+						width: 100px;
+						height: 4px;
+						background-color: @green;
+						display: block;
+						margin: 0 auto 20px auto;
+						&.pad-top {
+							margin: 10px auto 10px auto;
+						}
+					}
+					.separator {
+						display: block;
+						width: @full-bleed;
+						float: left;
+					}
+					.browse_results_grid {
+						display: block;
+						width: @full-bleed;
+						min-height: 200px;
+						.cell {
+							display: inline-block;
+							float: left;
+							position: relative;
+							left: -20px;
+							width: 100vw;
+							height: auto;
+							margin-bottom: 20px;
+							figure {
+								width: 100%;
+								height: auto;
+								overflow: hidden;
+								position: relative;
+								img {
+									width: 100%;
+									height: auto;
+								}
+								figcaption {
+									display: inline-block;
+									height: 30px;
+									line-height: 30px;
+									font-size: 14px;
+									width: @full-bleed;
+									position: relative;
+									top: -30px;
+									font-family: "Roboto Condensed";
+									font-weight: 400;
+									text-indent: 5px;
+									&.difficulty {
+										position: absolute;
+										top: 5px;
+										text-indent: 10px;
+										color: darken(@green, 10%);
+										font-weight: 700;
+										font-size: 12px;
+										text-transform: uppercase;
+									}
+									&.duration {
+										position: absolute;
+										top: 180px;
+										right: 0px;
+										width: 50px;
+										text-indent: -10px;
+										padding-right: 10px;
+										float: right;
+										font-weight: 200;
+										text-align: right;
+									}
+									&.title {
+										width: 250px;
+										float: left;
+										font-size: 16px;
+										position: absolute;
+										top: 180px;
+										font-weight: 700;
+										text-align: left;
+									}
+								}
+							}
+
+						}
+					}
+					.browse_results_pagiantion {
+						display: block;
+						width: @full-bleed;
+						float: left;
+						margin: 10px auto 0 auto;
+						ul {
+							position: relative;
+							top: 10px;
+							text-align: center;
+							li {
+								border-top: 1px solid #333;
+								border-bottom: 1px solid #333;
+								border-right: 1px solid #333;
+								display: inline-block;
+								width: 30px;
+								height: 30px;
+								line-height: 30px;
+								font-family: "Roboto Condensed";
+								font-weight: 400;
+								border-left: 0;
+								margin-left: -5px;
+								&:first-child {
+									border-top-left-radius: 5px;
+									border-bottom-left-radius: 5px;
+									border-left: 1px solid #333;
+								}
+								&:last-child {
+									border-top-right-radius: 5px;
+									border-bottom-right-radius: 5px;
+								}
+								&.active {
+									background-color: @green;
+									color: @white;
+								}
+								&:hover {
+									background-color: lighten(@green, 15%);
+									color: @white;
+								}
+							}
 						}
 					}
 				}

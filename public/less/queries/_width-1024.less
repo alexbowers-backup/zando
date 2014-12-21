@@ -10,6 +10,7 @@
 	@boundary-width: 430px;
 	@near-full-bleed: calc(~'100% - 40px');
 	@gutter: 20px;
+    @grid_width: 984px;
 
 // END VARIABLES
 
@@ -37,6 +38,29 @@
 			display: block;
 			height: inherit;
 			.horizontal-center;
+			#cookie_notice {
+				display: block;
+				width: @full-bleed;
+				text-align: center;
+				.horizontal-center;
+				padding-top: 10px;
+				p {
+					font-family: "Roboto";
+					font-weight: 300;
+					color: @white;
+					text-transform: uppercase;
+					line-height: 1.4;
+					font-size: 10px;
+					a {
+						font-weight: 700;
+						color: @white;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
 			#hero {
 				display: block;
 				width: @full-bleed;
@@ -56,6 +80,7 @@
 						width: @boundary-width;
 						font-family: "Roboto Condensed";
 						font-size: 50px;
+						line-height: 1;
 						letter-spacing: 2.4px;
 						font-weight: bold;
 						color: @white;
@@ -67,6 +92,7 @@
 						font-family: "Roboto Thin";
 						font-size: 15px;
 						font-weight: bold;
+						line-height: 1;
 						letter-spacing: 1.1px;
 						color: @white;
 						text-transform: uppercase;
@@ -89,6 +115,7 @@
 						font-weight: 700;
 						font-size: 28px;
 						color: #ffffff;
+						line-height: 1;
 						text-transform: uppercase;
 						letter-spacing: 2.8px;
 						padding-top: 5px;
@@ -101,6 +128,7 @@
 						letter-spacing: 1.6px;
 						font-size: 15px;
 						font-weight: bold;
+						line-height: 1;
 						color: @white;
 						text-transform: uppercase;
 						padding-bottom: 5px;
@@ -233,6 +261,83 @@
 			}
 		}
 	}
+	nav#navigation {
+		background: url(images/header-background.png) no-repeat center center fixed;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: @full-bleed;
+		height: 60px;
+		z-index: 99999;
+		.boundary {
+			width: @full-bleed;
+			display: block;
+			height: inherit;
+			.horizontal-center;
+			.noselect;
+			.logo {
+				height: 60px;
+				width: 80px;
+				display: inline-block;
+				padding-left: 40px;
+				color: @white;
+				cursor: pointer;
+				transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
+				border-left: 2px solid transparent;
+				border-right: 2px solid transparent;
+				float: left;
+				&:hover {
+					background-color: @white;
+					border-left: 2px solid @white;
+					border-right: 2px solid @white;
+					color: @green;
+				}
+				i {
+					.vertical-position;
+				}
+			}
+			.menu_button {
+				display: none;
+			}
+			.navigation_bar {
+				width: 750px;
+				display: inline-block;
+				padding-right: 0;
+				height: 60px;
+				border: 2px solid transparent;
+				.vertical-position;
+				text-align: right;
+				float: right !important;
+				background: transparent;
+				a {
+					.vertical-position;
+					display: inline-block;
+					height: 60px;
+					padding-left: 5px;
+					padding-right: 5px;
+					width: 140px;
+					text-align: center;
+					line-height: 60px;
+					font-family: "Roboto Condensed";
+					font-weight: 700;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: @white;
+					cursor: pointer;
+					transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
+					&:hover {
+						text-decoration: none;
+						background-color: @white;
+						color: @green;
+					}
+					&:last-child {
+						position: relative;
+						left: 2px;
+					}
+				}
+			}
+		}
+	}
 	section#container {
 		background-color: @white;
 		.boundary {
@@ -259,12 +364,14 @@
 							font-family: "Roboto Condensed";
 							font-weight: 700;
 							font-size: 53px;
+							line-height: 1;
 							text-transform: uppercase;
 							padding-bottom: @gutter / 4;
 						}
 						h2 {
 							font-family: "Roboto Thin";
 							font-size: 14px;
+							line-height: 1;
 							text-transform: uppercase;
 							padding-bottom: @gutter / 2;
 						}
@@ -288,6 +395,8 @@
 							    text-overflow: ellipsis;
 								a {
 									font-size: inherit;
+									text-align: left;
+									margin-bottom: 5px;
 								}
 							}
 							p {
@@ -318,38 +427,17 @@
 								}
 							}
 							.video_section {
-								height: 300px;
+								height: auto;
 								width: 100%;
 								left: 0;
 								figure {
 									width: 100%;
-									height: 300px;
+									height: auto;
 									img {
 										width: 100%;
-										height: 300px;
+										height: auto;
 									}
 								}
-							}
-						}
-						.more_button {
-							.horizontal-center;
-							text-align: center;
-							width: @near-full-bleed;
-							display: block;
-							border: 2px solid @black;
-							height: 40px;
-							cursor: pointer;
-							transition: background-color 0.4s ease-in, color 0.4s ease-in;
-							h1 {
-								.vertical-position;
-								font-family: "Roboto Condensed";
-								font-weight: 700;
-								text-transform: uppercase;
-							}
-							&:hover {
-								background-color: @green;
-								border: 2px solid @green;
-								color: @white;
 							}
 						}
 						.coming_soon {
@@ -367,6 +455,32 @@
 								font-family: "Roboto Thin";
 								font-size: 20px;
 							}
+						}
+					}
+					.more_button {
+						.horizontal-center;
+						text-align: center;
+						width: @near-full-bleed;
+						display: block;
+						border: 2px solid @black;
+						height: 40px;
+						cursor: pointer;
+						position: relative;
+						left: 20px;
+						float: left;
+						margin-top: 15px;
+						margin-bottom: 15px;
+						transition: background-color 0.4s ease-in, color 0.4s ease-in;
+						h1 {
+							.vertical-position;
+							font-family: "Roboto Condensed";
+							font-weight: 700;
+							text-transform: uppercase;
+						}
+						&:hover {
+							background-color: @green;
+							border: 2px solid @green;
+							color: @white;
 						}
 					}
 				}
@@ -513,8 +627,9 @@
 					}
 					.browse_results_grid {
 						display: block;
-						width: @full-bleed;
+						width: @grid_width;
 						min-height: 200px;
+						margin: 0 auto;
 						.cell {
 							display: inline-block;
 							float: left;
@@ -640,8 +755,22 @@
 		}
 	}
 	footer {
-		float: left;
-		width: @full-bleed;
-		padding-top: 10px;
+		background-color: @white;
+		.boundary {
+			width: @near-full-bleed;
+			display: block;
+			height: 60px;
+			.horizontal-center;
+			.copyright {
+				width: @full-bleed;
+				height: 60px;
+				display: inline-block;
+				line-height: 60px;
+				font-family: "Roboto";
+				font-weight: 400;
+				font-size: 14px;
+				text-align: center;
+			}
+		}
 	}
 }
