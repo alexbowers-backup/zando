@@ -19,3 +19,7 @@ Route::get('/static/home', function()
 Route::get('/static/browse', function() {
 	return View::make('browse');
 });
+
+Route::get('/static/video', function() {
+	return View::make('play_video');
+});

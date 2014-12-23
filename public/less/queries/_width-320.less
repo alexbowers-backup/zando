@@ -3,7 +3,6 @@
 // Proprietary and confidential
 // Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Zando.co.uk exclusively
 
-
 // VARIABLES
 
 @full-bleed: 100%;
@@ -102,7 +101,7 @@
 						font-family: "Roboto Condensed";
 						font-weight: 700;
 						font-size: 18px;
-						color: #ffffff;
+						color: #fff;
 						text-transform: uppercase;
 						letter-spacing: 2.8px;
 						padding-top: 5px;
@@ -676,6 +675,181 @@
 								&:hover {
 									background-color: lighten(@green, 15%);
 									color: @white;
+								}
+							}
+						}
+					}
+				}
+				.video_section {
+					display: block;
+					width: 100%;
+					position: relative;
+					left: -10px;
+					.video_header {
+						margin-top: 5px;
+						margin-bottom: 5px;
+						font-family: "Roboto Condensed";
+						font-weight: 400;
+						width: @full-bleed;
+						display: block;
+						height: 25px;
+						.title {
+							display: inline-block;
+							float: left;
+							width: 80%;
+						}
+						.duration {
+							display: inline-block;
+							float: left;
+							width: 20%;
+							text-align: right;
+							font-family: "Roboto Thin";
+							font-weight: 200;
+							position: relative;
+							left: 20px;
+						}
+						.category {
+							width: 20%;
+							display: inline-block;
+							float: left;
+							text-align: right;
+							position: relative;
+							left: 10px;
+							font-family: "Roboto Condensed";
+							color: darken(@green, 10%);
+							font-weight: 700;
+							font-size: 12px;
+							text-transform: uppercase;
+							line-height: 25px;
+						}
+					}
+					.video_extras {
+						width: 100%;
+						display: block;
+						float: left;
+						margin-bottom: 5px;
+						margin-top: 5px;
+						.date_published {
+							width: 50%;
+							display: inline-block;
+							float: left;
+							text-align: left;
+							font-family: "Roboto Condensed";
+							color: darken(@green, 10%);
+							font-weight: 700;
+							font-size: 12px;
+							text-transform: uppercase;
+							position: relative;
+							left: 10px;
+						}
+						.difficulty {
+							width: 50%;
+							display: inline-block;
+							float: left;
+							text-align: right;
+							position: relative;
+							left: 10px;
+							font-family: "Roboto Condensed";
+							color: darken(@green, 10%);
+							font-weight: 700;
+							font-size: 12px;
+							text-transform: uppercase;
+						}
+					}
+					.video_description {
+						width: @full-bleed;
+						position: relative;
+						left: 10px;
+						margin-top: 5px;
+						p {
+							text-align: justify;
+							line-height: 1.1;
+							font-family: "Roboto";
+							font-weight: 200;
+							font-size: 14px;
+						}
+					}
+					video {
+
+					}
+				}
+				hr {
+					width: 100px;
+					height: 4px;
+					background-color: @green;
+					display: block;
+					margin: 0 auto 20px auto;
+					&.pad-top {
+						margin: 10px auto 10px auto;
+					}
+				}
+				.series_section {
+					width: @full-bleed;
+					display: block;
+					.series_header {
+						margin-top: 5px;
+						margin-bottom: 5px;
+						font-family: "Roboto Condensed";
+						font-weight: 700;
+						width: @full-bleed;
+						display: block;
+						height: 35px;
+						.title {
+							display: inline-block;
+							float: left;
+							width: @full-bleed;
+							text-align: center;
+							font-size: 24px;
+						}
+					}
+					.series_table {
+						width: @full-bleed;
+						display: block;
+						table {
+							width: @full-bleed;
+							tbody {
+								padding: 10px;
+								display: block;
+								border: 1px solid black;
+								border-radius: 4px;
+								tr {
+									display: block;
+									width: @full-bleed;
+									min-height: 24px;
+									td {
+										&:first-child {
+											display: inline-block;
+											float: left;
+											width: 80%;
+											margin-left: -1px;
+											border-right: 1px solid black;
+											margin-top: -10px;
+											height: 45px;
+										}
+										&:last-child {
+											display: inline-block;
+											float: left;
+											width: 20%;
+											text-align: center;
+											text-indent: 4px;
+										}
+									}
+								}
+							}
+							tfoot {
+								display: block;
+								tr {
+									margin-top: 5px;
+									display: block;
+									width: @full-bleed;
+									td {
+										display: block;
+										width: @full-bleed;
+										text-align: center;
+										font-family: "Roboto Thin";
+										font-weight: 400;
+										font-size: 14px;
+									}
 								}
 							}
 						}
