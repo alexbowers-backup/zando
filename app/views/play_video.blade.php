@@ -57,13 +57,16 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 							<h4>51:40</h4>
 						</div>
 					</div>
-					<video id="a240e92d" class="sublime" poster="https://cdn.sublimevideo.net/vpa/ms_800.jpg"
-					       title="Midnight Sun" data-uid="a240e92d" preload="auto">
-						<source src="https://cdn.sublimevideo.net/vpa/ms_720p.mp4" data-quality="hd"/>
-						<source src="https://cdn.sublimevideo.net/vpa/ms_360p.mp4"/>
-						<source src="https://cdn.sublimevideo.net/vpa/ms_720p.webm" data-quality="hd"/>
-						<source src="https://cdn.sublimevideo.net/vpa/ms_360p.webm"/>
-					</video>
+					<div class="video">
+						<video id="a240e92d" class="sublime" poster="https://cdn.sublimevideo.net/vpa/ms_800.jpg"
+						       width="640" height="360" title="Midnight Sun" data-uid="a240e92d" data-autoresize="fit"
+						       preload="none">
+							<source src="https://cdn.sublimevideo.net/vpa/ms_720p.mp4" data-quality="hd"/>
+							<source src="https://cdn.sublimevideo.net/vpa/ms_360p.mp4"/>
+							<source src="https://cdn.sublimevideo.net/vpa/ms_720p.webm" data-quality="hd"/>
+							<source src="https://cdn.sublimevideo.net/vpa/ms_360p.webm"/>
+						</video>
+					</div>
 					<div class="video_extras">
 						<div class="date_published">January 15, 2014</div>
 						<div class="difficulty">Beginner</div>

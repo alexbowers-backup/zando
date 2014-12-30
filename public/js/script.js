@@ -83,7 +83,7 @@ $(document).ready(function () {
                 if (small_mobile) {
                     $('#container').css('padding-top', '200px');
                 } else {
-                    $('#container').css('padding-top', '108px');
+                    $('#container').css('padding-top', '116px');
                 }
             } else {
                 if (small_mobile) {

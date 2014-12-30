@@ -9,6 +9,7 @@
 @boundary-width: 430px;
 @near-full-bleed: calc(~'100% - 40px');
 @gutter: 20px;
+@grid_width: 630px;
 
 // END VARIABLES
 
@@ -607,12 +608,12 @@
 					}
 				}
 				.browse_results {
-					padding-top: 10px;
-					padding-bottom: 10px;
+					padding-top: 20px;
+					padding-bottom: 20px;
 					.browse_results_head {
 						width: @full-bleed;
 						text-align: center;
-						font-size: 18px;
+						font-size: 24px;
 						font-family: "Roboto Condensed";
 						padding-bottom: 10px;
 						color: #333;
@@ -624,6 +625,8 @@
 						display: block;
 						margin: 0 auto 20px auto;
 						&.pad-top {
+							position: relative;
+							top: 20px;
 							margin: 10px auto 10px auto;
 						}
 					}
@@ -634,24 +637,22 @@
 					}
 					.browse_results_grid {
 						display: block;
-						width: @full-bleed;
+						width: @grid_width;
 						min-height: 200px;
+						margin: 0 auto;
 						.cell {
 							display: inline-block;
 							float: left;
-							position: relative;
-							left: -20px;
-							width: 100vw;
-							height: auto;
-							margin-bottom: 20px;
+							margin-left: 20px;
+							width: 305px;
+							height: 200px;
 							figure {
 								width: 100%;
-								height: auto;
+								height: 100%;
 								overflow: hidden;
-								position: relative;
 								img {
 									width: 100%;
-									height: auto;
+									height: 100%;
 								}
 								figcaption {
 									display: inline-block;
@@ -665,8 +666,8 @@
 									font-weight: 400;
 									text-indent: 5px;
 									&.difficulty {
-										position: absolute;
-										top: 5px;
+										position: relative;
+										top: -200px;
 										text-indent: 10px;
 										color: darken(@green, 10%);
 										font-weight: 700;
@@ -674,9 +675,8 @@
 										text-transform: uppercase;
 									}
 									&.duration {
-										position: absolute;
-										top: 180px;
-										right: 0px;
+										position: relative;
+										top: -63px;
 										width: 50px;
 										text-indent: -10px;
 										padding-right: 10px;
@@ -688,24 +688,71 @@
 										width: 250px;
 										float: left;
 										font-size: 16px;
-										position: absolute;
-										top: 180px;
+										position: relative;
+										top: -63px;
 										font-weight: 700;
 										text-align: left;
 									}
 								}
 							}
-
+							&:first-child {
+								margin-left: 0;
+							}
+							&:nth-child(3n+0) {
+								//								height: 10px !important;
+								//								clear: both
+								position: relative;
+								left: -20px;
+								top: 20px;
+								width: 100%;
+								height: auto;
+								overflow: hidden;
+								figure {
+									margin-bottom: -60px;
+									height: auto;
+									.difficulty {
+										position: relative;
+										top: -354px;
+									}
+								}
+							}
+							&:nth-child(n + 4) {
+								position: relative;
+								left: -20px;
+								margin-top: 40px;
+							}
+							&:nth-child(n + 5) {
+								position: relative;
+								left: 0;
+								top: 20px;
+								margin-top: 20px;
+								margin-left: 0;
+							}
+							&:nth-child(n + 6) {
+								position: relative;
+								left: 0;
+								display: inline;
+								padding-right: 0;
+								padding-left: 0;
+								top: 0;
+							}
+							&:nth-child(n + 8) {
+								padding-left: 20px;
+							}
+							&:nth-child(n + 9) {
+								position: relative;
+								left: -20px;
+							}
 						}
 					}
 					.browse_results_pagiantion {
 						display: block;
 						width: @full-bleed;
 						float: left;
-						margin: 10px auto 0 auto;
+						margin: 20px auto 0 auto;
 						ul {
 							position: relative;
-							top: 10px;
+							top: 20px;
 							text-align: center;
 							li {
 								border-top: 1px solid #333;

@@ -963,7 +963,7 @@ body {
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption.difficulty {
     position: absolute;
-    top: 5px;
+    top: 2px;
     text-indent: 10px;
     color: #368e64;
     font-weight: 700;
@@ -980,6 +980,7 @@ body {
     float: right;
     font-weight: 200;
     text-align: right;
+    color: #333;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption.title {
     width: 250px;
@@ -989,6 +990,7 @@ body {
     top: 180px;
     font-weight: 700;
     text-align: left;
+    color: #333;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_pagiantion {
     display: block;
@@ -1074,6 +1076,11 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 25px;
+  }
+  .wrapper section#container .boundary #contained .video_section .video {
+    width: 100vw;
+    position: relative;
+    left: -10px;
   }
   .wrapper section#container .boundary #contained .video_section .video_extras {
     width: 100%;
@@ -1888,6 +1895,7 @@ body {
     float: right;
     font-weight: 200;
     text-align: right;
+    color: #333;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption.title {
     width: 250px;
@@ -1897,6 +1905,7 @@ body {
     top: 180px;
     font-weight: 700;
     text-align: left;
+    color: #333;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_pagiantion {
     display: block;
@@ -2606,13 +2615,13 @@ body {
     cursor: pointer;
   }
   .wrapper section#container .boundary #contained .browse_results {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_head {
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Roboto Condensed";
     padding-bottom: 10px;
     color: #333;
@@ -2625,6 +2634,8 @@ body {
     margin: 0 auto 20px auto;
   }
   .wrapper section#container .boundary #contained .browse_results hr.pad-top {
+    position: relative;
+    top: 20px;
     margin: 10px auto 10px auto;
   }
   .wrapper section#container .boundary #contained .browse_results .separator {
@@ -2634,27 +2645,25 @@ body {
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid {
     display: block;
-    width: 100%;
+    width: 630px;
     min-height: 200px;
+    margin: 0 auto;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell {
     display: inline-block;
     float: left;
-    position: relative;
-    left: -20px;
-    width: 100vw;
-    height: auto;
-    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 305px;
+    height: 200px;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure {
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden;
-    position: relative;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption {
     display: inline-block;
@@ -2669,8 +2678,8 @@ body {
     text-indent: 5px;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption.difficulty {
-    position: absolute;
-    top: 5px;
+    position: relative;
+    top: -200px;
     text-indent: 10px;
     color: #368e64;
     font-weight: 700;
@@ -2678,9 +2687,8 @@ body {
     text-transform: uppercase;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell figure figcaption.duration {
-    position: absolute;
-    top: 180px;
-    right: 0px;
+    position: relative;
+    top: -63px;
     width: 50px;
     text-indent: -10px;
     padding-right: 10px;
@@ -2692,20 +2700,66 @@ body {
     width: 250px;
     float: left;
     font-size: 16px;
-    position: absolute;
-    top: 180px;
+    position: relative;
+    top: -63px;
     font-weight: 700;
     text-align: left;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:first-child {
+    margin-left: 0;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(3n+0) {
+    position: relative;
+    left: -20px;
+    top: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(3n+0) figure {
+    margin-bottom: -60px;
+    height: auto;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(3n+0) figure .difficulty {
+    position: relative;
+    top: -354px;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(n + 4) {
+    position: relative;
+    left: -20px;
+    margin-top: 40px;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(n + 5) {
+    position: relative;
+    left: 0;
+    top: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(n + 6) {
+    position: relative;
+    left: 0;
+    display: inline;
+    padding-right: 0;
+    padding-left: 0;
+    top: 0;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(n + 8) {
+    padding-left: 20px;
+  }
+  .wrapper section#container .boundary #contained .browse_results .browse_results_grid .cell:nth-child(n + 9) {
+    position: relative;
+    left: -20px;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_pagiantion {
     display: block;
     width: 100%;
     float: left;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_pagiantion ul {
     position: relative;
-    top: 10px;
+    top: 20px;
     text-align: center;
   }
   .wrapper section#container .boundary #contained .browse_results .browse_results_pagiantion ul li {
