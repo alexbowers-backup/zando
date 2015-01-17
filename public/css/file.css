@@ -250,6 +250,29 @@ a img {
   font-weight: 700;
   src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v9/mg0cGfGRUERshzBlvqxeAAm1Bdh5PCvFKhAPu2iWX-U.woff) format('woff');
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/zando/icomoon.eot?60v2uf');
+  src: url('/fonts/zando/icomoon.eot?#iefix60v2uf') format('embedded-opentype'), url('/fonts/zando/icomoon.woff?60v2uf') format('woff'), url('/fonts/zando/icomoon.ttf?60v2uf') format('truetype'), url('/fonts/zando/icomoon.svg?60v2uf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-zando:before {
+  content: "\e600";
+}
 .vertical-position {
   position: relative;
   top: 50%;
@@ -325,6 +348,17 @@ body {
   color: #ffffff;
   animation-duration: 1s;
   animation-delay: 2s;
+}
+.logo {
+  color: #ffffff;
+}
+.logo:hover {
+  color: #44b37e;
+}
+.logo .icon-zando {
+  font-size: 2em;
+  display: inline-block;
+  line-height: 60px;
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .wrapper {

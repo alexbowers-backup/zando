@@ -23,6 +23,10 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 		<meta name="" content=""/>
 		<meta name="" content=""/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Favicons for many browsers -->
+
+		<!-- End Favicons -->
 		<title>Zando | Home Page</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 		<script src="/js/jquery.cookie.js" type="text/javascript"></script>
@@ -60,7 +64,7 @@ Written by Alex Bowers <bowersbros+zando_copyright@gmail.com>, March 2014 for Za
 			<nav id="navigation">
 				<div class="boundary">
 					<div class="logo">
-						<i class="fa fa-wifi fa-2x"></i>
+						<i class="icon-zando"></i>
 					</div>
 					<div id="menu-toggle" data-menu_open="false" class="menu_button pull-right">
 						<i class="fa fa-navicon fa-2x"></i>
